@@ -50,7 +50,7 @@ public class TestTemplate {
     public void test1() {
         System.out.println("test1.1 proba");
         driver.get("https://www.google.com/");
-        Assert.assertTrue(driver.getCurrentUrl().equals("https://www.gooogle.com/"));
+        Assert.assertTrue(driver.getCurrentUrl().equals("https://www.google.com/"));
         System.out.println("proba 1.2");
     }
 
