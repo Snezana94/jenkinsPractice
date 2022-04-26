@@ -2,6 +2,7 @@ package tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objects.Utility;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -48,10 +49,10 @@ public class TestTemplate {
 
     @Test
     public void test1() {
-        System.out.println("test1.1 proba");
-        driver.get("https://www.google.com/");
-        Assert.assertTrue(driver.getCurrentUrl().equals("https://www.gooogle.com/"));
-        System.out.println("proba 1.2");
+        driver.get("https://snezana94.github.io/my-first-site/");
+        String h = driver.findElement(By.tagName("h1")).getText();
+        Assert.assertEquals(h, "Kuhinjski DEKOR");
+        System.out.println(h);
     }
 
     @Test
