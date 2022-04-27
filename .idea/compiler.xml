@@ -9,5 +9,8 @@
         <module name="probaJenkins" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Screenshots" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

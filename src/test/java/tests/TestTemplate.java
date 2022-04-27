@@ -51,8 +51,10 @@ public class TestTemplate {
     public void test1() {
         driver.get("https://snezana94.github.io/my-first-site/");
         String h = driver.findElement(By.tagName("h1")).getText();
-        Assert.assertEquals(h, "Kuhinjskii DEKOR");
+        Assert.assertEquals(h, "Kuhinjski DEKOR");
         System.out.println(h);
+        Assert.assertEquals(h, "Kuhinjski DEKOR");
+        System.out.println(h + "....1222");
     }
 
     @Test
