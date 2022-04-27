@@ -53,7 +53,7 @@ public class TestTemplate {
         String h = driver.findElement(By.tagName("h1")).getText();
         Assert.assertEquals(h, "Kuhinjski DEKOR");
         System.out.println(h);
-        Assert.assertEquals(h, "Kuhinjski DEKOR");
+        Assert.assertEquals(h, "Kuhinjskii DEKOR");
         System.out.println(h + "....1222");
     }
 
